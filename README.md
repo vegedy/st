@@ -23,7 +23,6 @@ features that make it literally the best terminal emulator ever:
 
 + Compatibility with `Xresources` and `pywal` for dynamic colors.
 + Default [gruvbox](https://github.com/morhetz/gruvbox) colors otherwise.
-+ Transparency/alpha, which is also adjustable from your `Xresources`.
 + Default font is system "mono" at 14pt, meaning the font will match your
   system font.
 
@@ -61,17 +60,15 @@ For many key variables, this build of `st` will look for X settings set in
 either `~/.Xdefaults` or `~/.Xresources`. You must run `xrdb` on one of these
 files to load the settings.
 
-For example, you can define your desired fonts, transparency or colors:
+For example, you can define your desired fonts or colors:
 
 ```
 *.font:	Liberation Mono:pixelsize=12:antialias=true:autohint=true;
-*.alpha: 0.9
 *.color0: #111
 ...
 ```
 
-The `alpha` value (for transparency) goes from `0` (transparent) to `1`
-(opaque). There is an example `Xdefaults` file in this respository.
+There is an example `Xdefaults` file in this respository.
 
 ### Colors
 
